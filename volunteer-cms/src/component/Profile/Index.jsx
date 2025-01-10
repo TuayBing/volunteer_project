@@ -2,22 +2,10 @@ import React, { useState } from 'react';
 import Banner from './Banner';
 import SideMenu from './SideMenu';
 import UserForm from './UserForm';
+import ActivityLog from './ActivityLog';  // เพิ่ม import
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState('profile');
-
-  const ActivityLog = () => {
-    return (
-      <div className="flex-1 p-8 h-[500px]">
-        <h2 className="text-2xl font-bold mb-8">บันทึกกิจกรรม</h2>
-        <div className="space-y-8">
-          <div className="grid grid-cols-2 gap-x-8 gap-y-6">
-            <div className="h-[480px]"></div>
-          </div>
-        </div>
-      </div>
-    );
-  };
 
   const Documents = () => {
     return (

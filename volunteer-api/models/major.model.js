@@ -7,6 +7,10 @@ const Major = sequelize.define('Major', {
     primaryKey: true,
     autoIncrement: true
   },
+  name: {
+    type: DataTypes.STRING(100),
+    allowNull: false
+  },
   facultyId: {
     type: DataTypes.INTEGER,
     allowNull: false,
@@ -14,10 +18,6 @@ const Major = sequelize.define('Major', {
       model: 'faculties',
       key: 'id'
     }
-  },
-  name: {
-    type: DataTypes.STRING(100),
-    allowNull: false
   }
 }, {
   timestamps: false,
